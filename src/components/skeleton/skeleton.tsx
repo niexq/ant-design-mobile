@@ -24,7 +24,7 @@ export const Skeleton: FC<SkeletonProps> = props => {
 
 export type SkeletonTitleProps = {
   animated?: boolean
-} & NativeProps
+} & NativeProps<'--width' | '--height' | '--border-radius'>
 
 export const SkeletonTitle: FC<SkeletonTitleProps> = props => {
   return withNativeProps(
@@ -36,7 +36,7 @@ export const SkeletonTitle: FC<SkeletonTitleProps> = props => {
 export type SkeletonParagraphProps = {
   animated?: boolean
   lineCount?: number
-} & NativeProps
+} & NativeProps<'--width' | '--height' | '--border-radius'>
 
 const defaultSkeletonParagraphProps = {
   lineCount: 3,
